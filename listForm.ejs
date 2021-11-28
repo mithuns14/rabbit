@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List users</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;         
+        }
+        </style>
+  </head>
+
+  <body>
+    <span>
+      <h3>Add User</h3>
+      <a href="/list"><h3>List Users</h3></a>
+    </span>
+
+    <table>
+        <table>
+            <th>No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <% 
+            for(var i=0; i < result.length; i++) { %>     
+                <%let index=i %>
+               <tr>
+                 <td><a href="/details?id=<%= result[i]._id %>"><%= i+1 %></a></td>
+                 <td><%= result[i].firstName %></td>
+                 <td><%= result[i].email %></td>                 
+               </tr>
+            <% } %>
+            </table>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Details</title>
+        <style>
+        table, th, td {
+          border: 1px solid black;         
+        }
+        </style>
+  </head>
+
+  <body>
+    <span>
+      <h3>User Details</h3>
+      <a href="/list"><h3>List Users</h3></a>
+      <a href="/"><h3>Add Users</h3></a>
+    </span>
+
+    <table>
+        <table>
+            <th>No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Introduction</th>
+            <th>Phone</th>
+            <th>Experience</th>
+            <th>Achievements</th>
+            <% 
+            for(var i=0; i < result.length; i++) { %>     
+                <%let index=i %>
+               <tr>
+                 <td><%= i+1 %></td>
+                 <td><%= result[i].firstName %></td>
+                 <td><%= result[i].lastName %></td>
+                 <td><%= result[i].email %></td>                 
+                 <td><%= result[i].introduction %></td>          
+                 <td><%= result[i].phone %></td>          
+                 <td><%= result[i].experience %></td>          
+                 <td><%= result[i].achievements %></td>          
+               </tr>
+            <% } %>
+            </table>
+    </table>
+  </body>
+</html>

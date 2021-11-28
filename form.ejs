@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert users</title>
+  </head>
+
+  <body>
+    <span>
+      <h3>Add User</h3>
+      <a href="/list"><h3> List Users</h3></a>
+    </span>
+
+    <form action="user" method="POST">
+      <pre>
+            First Name    : <input type="text" name="firstName"
+                        value='<%=user.firstName%>'> <br>
+  
+            Last Name     : <input type="text" name="lastName"
+                        value='<%=user.lastName%>'> <br>
+
+            Email         : <input type="email" name="email"
+                        value='<%=user.email%>'> <br>
+  
+            Introduction  : <input type="text" name="introduction"
+                        value='<%=user.introduction%>'> <br>
+  
+            Phone         : <input type="number" name="phone"
+                        value='<%=user.phone%>'> <br>
+            
+            Experience    : <input type="text" name="introduction"
+                             value='<%=user.experience%>'> <br>
+
+            Achievements  : <input type="text" name="achievements"
+                             value='<%=user.achievements%>'> <br>
+  
+            <input type="submit" value="Submit Form"> 
+        </pre>
+    </form>
+  </body>
+</html>
