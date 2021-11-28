@@ -17,4 +17,4 @@ npm install
 nodemon index.js
 ```
 
-Your app should now be running on [localhost:3000](http://localhost:3000/).
+App should now be running on [localhost:3000](http://localhost:3000/).
